@@ -324,8 +324,8 @@ func mapWithStructsExample() {
 
 	// Map with struct pointers (for easier updates)
 	employeePtrs := map[int]*Employee{
-		1: &Employee{ID: 1, Name: "Alice", Position: "Engineer", Salary: 75000},
-		2: &Employee{ID: 2, Name: "Bob", Position: "Designer", Salary: 65000},
+		1: {ID: 1, Name: "Alice", Position: "Engineer", Salary: 75000},
+		2: {ID: 2, Name: "Bob", Position: "Designer", Salary: 65000},
 	}
 
 	// Direct update through pointer
