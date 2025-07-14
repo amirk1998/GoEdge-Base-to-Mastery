@@ -79,7 +79,7 @@ GoEdge-Base-to-Mastery/
 
 2. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/GoEdge-Base-to-Mastery.git
+   git clone https://github.com/amirk1998/GoEdge-Base-to-Mastery.git
    cd GoEdge-Base-to-Mastery
    ```
 
