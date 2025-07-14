@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-//// Version information (set by build flags)
+// // Version information (set by build flags)
 //var (
 //	version = "dev"
 //	commit  = "unknown"
@@ -132,7 +132,7 @@ func main() {
 
 func showHelp() {
 	fmt.Println(internal.Header("🐹 Golang Review Project"))
-	fmt.Printf("Version: %s (commit: %s)\n", version, commit)
+	//fmt.Printf("Version: %s (commit: %s)\n", version, commit)
 	fmt.Println(internal.Cyan("=" + repeat("=", 40)))
 	fmt.Println(internal.Bold("Usage:"), "go run ./cmd/goedge <topic>")
 	fmt.Println("\n" + internal.Subtitle("Available topics:"))
