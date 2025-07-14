@@ -217,6 +217,12 @@ Thumbs.db
 # Log files
 *.log
 
+# Text files
+*.txt
+
+# CSV files
+*.csv
+
 # Temporary files
 *.temp
 
@@ -227,3 +233,5 @@ Thumbs.db
 /.github/workflows/.golangci.yml
 /.github/pull_request_template.md
 /.github/ISSUE_TEMPLATE/*
+
+
