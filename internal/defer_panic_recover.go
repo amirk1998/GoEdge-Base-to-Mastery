@@ -315,7 +315,6 @@ func recoverPatternExample() {
 
 		// Simulate work that might panic
 		panic("simulated error")
-		return 42, nil
 	}
 
 	if result, err := safeFunction(); err != nil {
