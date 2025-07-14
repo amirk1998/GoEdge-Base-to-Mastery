@@ -241,7 +241,6 @@ func basicRecoverExample() {
 
 		fmt.Println("    Before panic")
 		panic("This is a test panic!")
-		fmt.Println("    This line won't execute")
 	}()
 
 	fmt.Println("    Execution continues after recovered panic")

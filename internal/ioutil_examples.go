@@ -489,7 +489,7 @@ func discardExample() {
 	if err != nil {
 		fmt.Printf("Error copying to discard: %v\n", err)
 	} else {
-		fmt.Printf("Discarded %d bytes\n", Green(fmt.Sprintf("%d", discardedBytes)))
+		fmt.Printf("Discarded %s bytes\n", Green(fmt.Sprintf("%d", discardedBytes)))
 	}
 
 	// Practical example: draining a reader without storing content
@@ -511,7 +511,7 @@ func discardExample() {
 	if err != nil {
 		fmt.Printf("Error draining file: %v\n", err)
 	} else {
-		fmt.Printf("Drained %d bytes from file to discard\n",
+		fmt.Printf("Drained %s bytes from file to discard\n",
 			Yellow(fmt.Sprintf("%d", drainedBytes)))
 	}
 
@@ -534,6 +534,6 @@ func discardExample() {
 		}
 	}
 
-	fmt.Printf("Total bytes discarded: %d\n", Cyan(fmt.Sprintf("%d", totalDiscarded)))
+	fmt.Printf("Total bytes discarded: %s\n", Cyan(fmt.Sprintf("%d", totalDiscarded)))
 	fmt.Println()
 }

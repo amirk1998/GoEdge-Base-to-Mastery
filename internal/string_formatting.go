@@ -79,7 +79,7 @@ func numericFormattingExample() {
 	// Currency formatting simulation
 	price := 1234.56
 	fmt.Printf("Price: $%.2f\n", price)
-	fmt.Printf("Price with commas: $%,.2f\n", price) // Note: Go doesn't have built-in comma formatting
+	// fmt.Printf("Price with commas: $%,.2f\n", price) // Note: Go doesn't have built-in comma formatting
 
 	// Percentage formatting
 	ratio := 0.85
@@ -88,7 +88,7 @@ func numericFormattingExample() {
 	// Large numbers
 	bigNumber := 1234567890
 	fmt.Printf("Big number: %d\n", bigNumber)
-	fmt.Printf("Big number with separators: %,d\n", bigNumber) // Custom implementation needed
+	// fmt.Printf("Big number with separators: %,d\n", bigNumber) // Custom implementation needed
 }
 
 func stringManipulationExample() {

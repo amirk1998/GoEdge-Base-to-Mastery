@@ -227,7 +227,6 @@ func riskyFunction() {
 
 	fmt.Println("About to panic...")
 	panic("Something went wrong!")
-	fmt.Println("This will not be printed")
 }
 
 func panicRecoverExample() {

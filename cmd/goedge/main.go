@@ -3,8 +3,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/amirk1998/GoEdge-Base-to-Mastery/internal"
 	"os"
+
+	"github.com/amirk1998/GoEdge-Base-to-Mastery/internal"
 )
 
 // // Version information (set by build flags)

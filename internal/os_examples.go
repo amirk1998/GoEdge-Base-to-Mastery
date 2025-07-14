@@ -215,19 +215,19 @@ func processInfoDemo() {
 
 	// Get process ID
 	pid := os.Getpid()
-	fmt.Printf("Process ID: %d\n", Green(fmt.Sprintf("%d", pid)))
+	fmt.Printf("Process ID: %s\n", Green(fmt.Sprintf("%d", pid)))
 
 	// Get parent process ID
 	ppid := os.Getppid()
-	fmt.Printf("Parent Process ID: %d\n", Cyan(fmt.Sprintf("%d", ppid)))
+	fmt.Printf("Parent Process ID: %s\n", Cyan(fmt.Sprintf("%d", ppid)))
 
 	// Get user ID (Unix-like systems)
 	uid := os.Getuid()
-	fmt.Printf("User ID: %d\n", Yellow(fmt.Sprintf("%d", uid)))
+	fmt.Printf("User ID: %s\n", Yellow(fmt.Sprintf("%d", uid)))
 
 	// Get group ID (Unix-like systems)
 	gid := os.Getgid()
-	fmt.Printf("Group ID: %d\n", Yellow(fmt.Sprintf("%d", gid)))
+	fmt.Printf("Group ID: %s\n", Yellow(fmt.Sprintf("%d", gid)))
 
 	// Get hostname
 	hostname, err := os.Hostname()

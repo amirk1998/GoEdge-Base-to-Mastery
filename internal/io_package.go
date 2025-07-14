@@ -120,7 +120,7 @@ func stringReaderWriterExample() {
 		fmt.Printf("Error reading byte: %s\n", ErrorText(err.Error()))
 		return
 	}
-	fmt.Printf("Next byte: %c\n", Green(string(b)))
+	fmt.Printf("Next byte: %s\n", Green(string(b)))
 
 	// Read until delimiter
 	reader.Seek(0, io.SeekStart) // Reset position
@@ -129,7 +129,7 @@ func stringReaderWriterExample() {
 		fmt.Printf("Error reading: %s\n", ErrorText(err.Error()))
 		return
 	}
-	fmt.Printf("First character: %c\n", Cyan(string(word)))
+	fmt.Printf("First character: %s\n", Cyan(string(word)))
 
 	// String Builder (Writer) example
 	var builder strings.Builder
