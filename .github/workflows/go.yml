@@ -87,7 +87,7 @@ jobs:
           go build -v -o bin/goedge ./cmd/goedge
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: goedge-binary
           path: bin/goedge
