@@ -41,6 +41,10 @@ func main() {
 		fmt.Println(internal.Header("📊 Running Array & Slice Examples:"))
 		fmt.Println(internal.Cyan("=" + repeat("=", 40)))
 		internal.RunArraySliceExamples()
+	case "arrays-pro", "arrays-professional":
+		fmt.Println(internal.Header("🚀 Running Professional Array & Slice Examples:"))
+		fmt.Println(internal.Cyan("=" + repeat("=", 40)))
+		internal.RunArraySliceProfessionalExamples()
 	case "maps":
 		fmt.Println(internal.Header("🗺️ Running Map Examples:"))
 		fmt.Println(internal.Cyan("=" + repeat("=", 40)))
@@ -144,6 +148,7 @@ func showHelp() {
 		{"pointers", "Pointer examples"},
 		{"functions", "Function examples"},
 		{"arrays", "Array & Slice examples"},
+		{"arrays-pro", "Professional Array & Slice examples"},
 		{"maps", "Map examples"},
 		{"defer", "Defer/Panic/Recover examples"},
 		{"strings", "String formatting examples"},
@@ -185,6 +190,7 @@ func runAllExamples() {
 		{"🔗 Pointers", internal.RunPointerExamples},
 		{"🔧 Functions", internal.RunFunctionExamples},
 		{"📊 Arrays & Slices", internal.RunArraySliceExamples},
+		{"🚀 Professional Arrays & Slices", internal.RunArraySliceProfessionalExamples},
 		{"🗺️ Maps", internal.RunMapExamples},
 		{"🔄 Defer/Panic/Recover", internal.RunDeferPanicRecoverExamples},
 		{"📝 String Formatting", internal.RunStringFormattingExamples},
