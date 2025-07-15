@@ -45,6 +45,10 @@ func main() {
 		fmt.Println(internal.Header("🚀 Running Professional Array & Slice Examples:"))
 		fmt.Println(internal.Cyan("=" + repeat("=", 40)))
 		internal.RunArraySliceProfessionalExamples()
+	case "value-reference", "pass-by-value", "pass-by-reference":
+		fmt.Println(internal.Header("🔄 Running Value vs Reference Examples:"))
+		fmt.Println(internal.Cyan("=" + repeat("=", 40)))
+		internal.RunValueReferenceExamples()
 	case "maps":
 		fmt.Println(internal.Header("🗺️ Running Map Examples:"))
 		fmt.Println(internal.Cyan("=" + repeat("=", 40)))
@@ -149,6 +153,7 @@ func showHelp() {
 		{"functions", "Function examples"},
 		{"arrays", "Array & Slice examples"},
 		{"arrays-pro", "Professional Array & Slice examples"},
+		{"value-reference", "Value vs Reference passing examples"},
 		{"maps", "Map examples"},
 		{"defer", "Defer/Panic/Recover examples"},
 		{"strings", "String formatting examples"},
@@ -191,6 +196,7 @@ func runAllExamples() {
 		{"🔧 Functions", internal.RunFunctionExamples},
 		{"📊 Arrays & Slices", internal.RunArraySliceExamples},
 		{"🚀 Professional Arrays & Slices", internal.RunArraySliceProfessionalExamples},
+		{"🔄 Value vs Reference", internal.RunValueReferenceExamples},
 		{"🗺️ Maps", internal.RunMapExamples},
 		{"🔄 Defer/Panic/Recover", internal.RunDeferPanicRecoverExamples},
 		{"📝 String Formatting", internal.RunStringFormattingExamples},
